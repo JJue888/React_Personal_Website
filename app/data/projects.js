@@ -1,3 +1,7 @@
+import garpImage from '../assets/projects/Garp1.gif'
+import airplaneImage from '../assets/projects/airport_database.PNG'
+import scheduleImage from '../assets/projects/Schedule_img.PNG'
+
 export const PROJECT_DATA = [
 
     {
@@ -20,7 +24,7 @@ export const PROJECT_DATA = [
             text3: "With my partner, I worked on writing queries to create tables to store information within the database. I also wrote stored procedures to allow us to add, delete, and modify information in the database. I also wrote views that ensured a user could only access their information.",
             text4: "The Java application that we created contains login, search, review, and reply features. First, a user has the option to log in to an existing account or create a new account. Rather than storing passwords in plain text, a password is salted using a hash, and the salted password with the hash is stored in the database. Next, a user can access either the airport or airline table and is able to make more specific queries. These queries are done using prepared statements to prevent SQL injection attacks. After selecting something to rate, a user is presented with all existing reviews with the option to add a new review or reply to a review.",
         },
-        image: '',
+        image: airplaneImage,
     },
 
     {
@@ -31,7 +35,7 @@ export const PROJECT_DATA = [
             text3: "Additionally, we implemented an authentication system that included both Firebase authentication and Rose-Hulman’s unique authentication. This allowed us to ensure a users would only be able to edit their own schedules by using the authentication to give a user a unique ID.",
             text4: ""
         },
-        image: '',
+        image: scheduleImage,
     },
 
     {
@@ -42,7 +46,7 @@ export const PROJECT_DATA = [
             text3: "To wrap up the project, we created a presentation and paper to show our findings. We conducted various experiments using our GUI to see how various factors impacted the evolution of the population. We presented our findings to the class and successfully completed this project.",
             text4: ""
         },
-        image: '',
+        image: garpImage,
     }
 
 ]
