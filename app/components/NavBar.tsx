@@ -47,10 +47,10 @@ const NavBar = () => {
     }
 
     return (
-        <>
+        <header>
             {!isMobile ? (
                 // Laptop Navbar Code Here
-                <nav className={`h-screen ${bgColor}`}>
+                <nav className={`relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10`}>
                     <div className="flex justify-between mx-auto items-center py-4 px-24">
                         <ul className="flex gap-8 md:gap-16 items-center justify-center text-center cursor-pointer">
                             {navLinks.map((link, index) => (
@@ -63,9 +63,8 @@ const NavBar = () => {
                 </nav>
             ) : (
                 // Mobile Navbar Code Here
-                <nav className={`h-screen ${bgColor} py-4 px-4`}>
+                <nav className={`relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 py-4 px-4`}>
                     <div className="mx-auto flex justify-between items-center ">
-                        <div className="text-white font-bold text-xl">Logo</div>
                         <div className="flex justify-end items-center gap-6 text-white cursor-pointer">
                             <FaBars onClick={handleBarsIconClick} className="text-white cursor-pointer" />
                         </div>
@@ -89,7 +88,7 @@ const NavBar = () => {
                     )}
                 </nav>
             )}
-        </>
+        </header>
     );
 }
 
