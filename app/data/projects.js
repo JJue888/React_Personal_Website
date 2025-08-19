@@ -6,7 +6,9 @@ export const PROJECT_DATA = [
 
     {
         title: 'Seven Wonders',
-        description: '',
+        description: [
+            { text: ""}
+        ],
         image: '',
     },
 
