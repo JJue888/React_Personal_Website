@@ -5,12 +5,10 @@ export default [
     route("/", "./routes/rootLayout.tsx", [
         index("routes/index.tsx"),
         route("about", "./routes/about.tsx"),
-        route("experiences", "./routes/experiences.tsx", [
-            route(":experienceId", "./routes/experienceDetails.tsx"),
-        ]),
-        route("projects", "./routes/projects.tsx", [
-            route(":projectId", "./routes/projectDetails.tsx"),
-        ]),
+        route("experiences", "./routes/experiences.tsx"),
+        route("experiences/:experienceTitle", "./routes/experienceDetails.tsx"),
+        route("projects", "./routes/projects.tsx"),
+        route("projects/:projectTitle", "./routes/projectDetails.tsx"),
         route("contact", "./routes/contact.tsx"),
     ])
 ] satisfies RouteConfig;
