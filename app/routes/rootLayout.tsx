@@ -5,7 +5,7 @@ function RootLayout() {
     return (
         <>
             <NavBar />
-            <main className="main">
+            <main>
                 <Outlet />
             </main>
         </>
