@@ -1,6 +1,7 @@
 import {NavLink} from "react-router";
 import {useEffect, useState} from "react";
 import { FaBars, FaTimes} from 'react-icons/fa';
+import DarkModeToggle from "~/components/DarkModeToggle";
 
 const navLinks = [
     {title: "Home", href: "/"},
@@ -91,33 +92,5 @@ const NavBar = () => {
         </header>
     );
 }
-
-
-
-// function NavBar() {
-//     return (
-//         <header>
-//             <nav className="relative bg-gray-800">
-//                 <ul>
-//                     <li>
-//                         <NavLink to="/">Home</NavLink>
-//                     </li>
-//                     <li>
-//                         <NavLink to="/about">About</NavLink>
-//                     </li>
-//                     <li>
-//                         <NavLink to="/projects">Projects</NavLink>
-//                     </li>
-//                     <li>
-//                         <NavLink to="/experiences">Experiences</NavLink>
-//                     </li>
-//                     <li>
-//                         <NavLink to="/contact">Contact</NavLink>
-//                     </li>
-//                 </ul>
-//             </nav>
-//         </header>
-//     )
-// }
 
 export default NavBar;
