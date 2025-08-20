@@ -52,7 +52,7 @@ const NavBar = () => {
             {!isMobile ? (
                 // Laptop Navbar Code Here
                 <nav className={`relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10`}>
-                    <div className="flex justify-between mx-auto items-center py-4 px-24">
+                    <div className="flex justify-center mx-auto items-center py-4 px-24">
                         <ul className="flex gap-8 md:gap-16 items-center justify-center text-center cursor-pointer">
                             {navLinks.map((link, index) => (
                                 <NavLink  to={link.href} key={index} className="text-white text-sm">{link.title}</NavLink>
