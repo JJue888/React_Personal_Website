@@ -1,0 +1,1 @@
+import{w as o}from"./chunk-UH6JLGW7-Co_dqqgC.js";import{j as e}from"./rootLayout-CdUO1L-D.js";function t(){return e.jsx(e.Fragment,{children:e.jsx("h1",{children:"Welcome to my page"})})}const m=o(t);export{m as default};

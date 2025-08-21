@@ -1,0 +1,1 @@
+import{j as s}from"./rootLayout-CdUO1L-D.js";const a=({title:e,image:r})=>s.jsx(s.Fragment,{children:s.jsxs("div",{className:"",children:[s.jsx("img",{src:r[0],alt:e}),s.jsx("p",{className:"text-white text-center pt-2",children:e})]})});export{a as W};
